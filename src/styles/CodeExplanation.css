@@ -1,0 +1,108 @@
+.code-explanation, .conditional-explanation {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1e1e3f;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .code-title {
+    font-size: 1.2rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .code-line {
+    font-family: 'Fira Code', monospace;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .code-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 4px;
+  }
+  
+  .code-line:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .code-keyword { color: #ff79c6; }
+  .code-operator { color: #ff79c6; }
+  .code-string { color: #f1fa8c; }
+  .code-number { color: #bd93f9; }
+  .code-comment { color: #6272a4; }
+  
+  .variable-highlight {
+    background: rgba(189, 147, 249, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid rgba(189, 147, 249, 0.3);
+  }
+  
+  .condition-highlight {
+    background: rgba(255, 121, 198, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 121, 198, 0.3);
+  }
+  
+  .result-highlight {
+    background: rgba(80, 250, 123, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid rgba(80, 250, 123, 0.3);
+  }
+  
+  .code-line-indicator {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #50fa7b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .code-tooltip {
+    position: absolute;
+    background: #282a36;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #f8f8f2;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-width: 250px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    right: -270px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .code-line:hover .code-tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .emoji-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }

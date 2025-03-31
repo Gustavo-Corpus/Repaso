@@ -1,0 +1,157 @@
+.welcome-message {
+    text-align: center;
+    padding: 3rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin: 2rem 0;
+    animation: fadeIn 0.5s ease;
+}
+  
+.welcome-message h2 {
+    font-size: 2rem;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+}
+  
+.welcome-message p {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+  
+.error-message {
+    text-align: center;
+    padding: 2rem;
+    background: #fee2e2;
+    border-radius: 12px;
+    margin: 2rem 0;
+    color: #991b1b;
+}
+  
+.topic-content {
+    animation: fadeIn 0.5s ease;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+  
+.explanation {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #4f46e5;
+}
+  
+.explanation-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+/* Nuevos estilos para el título y la descripción inicial */
+.topic-title {
+    color: #4f46e5;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.concept-explanation {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #4f46e5;
+}
+
+.concept-explanation p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.concept-explanation ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.concept-explanation li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.concept-explanation li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+}
+
+/* Estilos para el texto coloreado */
+.text-green {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Estilos para el mensaje de estado */
+.status-message {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.status-message.success {
+    background: #86efac;
+    color: #166534;
+}
+
+.status-message.warning {
+    background: #fecaca;
+    color: #991b1b;
+}
+  
+.explanations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@media (max-width: 768px) {
+    .topic-content {
+        padding: 1rem;
+    }
+
+    .explanations-container {
+        gap: 1rem;
+    }
+    
+    .explanation {
+        padding: 1rem;
+    }
+
+    .concept-explanation {
+        padding: 1rem;
+    }
+}
