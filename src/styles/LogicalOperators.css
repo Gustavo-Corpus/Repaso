@@ -1,0 +1,225 @@
+
+.logical-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 12px;
+  }
+  
+  .example-selector {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .example-selector button {
+    padding: 1rem 2rem;
+    border: 2px solid #6366f1;
+    border-radius: 8px;
+    background: white;
+    color: #2d3748; /* Añadimos el color negro por defecto */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  .example-selector button:hover {
+    background: #f0f0ff; /* Opcional: efecto hover suave */
+    transform: translateY(-2px); /* Opcional: efecto de elevación */
+  }
+  
+  .example-selector button.active {
+    background: #6366f1;
+    color: white;
+    transform: translateY(-2px); /* Opcional: mantiene el efecto de elevación */
+    box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3); /* Opcional: sombra suave */
+  }
+  
+  .flashlight-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .control-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .flashlight {
+    width: 200px;
+    height: 400px;
+    position: relative;
+  }
+  
+  .flashlight-body {
+    background: #333;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .flashlight.on .flashlight-body {
+    background: #4a5568;
+  }
+  
+  .light-beam {
+    position: absolute;
+    top: -203.8px;
+    left: -39.5%;
+    transform: translateX(40%);
+    width: 490px;
+    height: 516px;
+    clip-path: polygon(-11.34% 48.81%, 98.91% 18.62%, 100.07% 76.64%);
+    background: radial-gradient(
+      ellipse at left,
+      rgba(255, 255, 150, 0.6),
+      transparent 70%
+    );
+    filter: blur(10px);
+    z-index: 1;
+    animation: flicker 0.5s infinite alternate;
+  }
+  
+  @keyframes flicker {
+    from { opacity: 0.9; }
+    to { opacity: 1; }
+  }
+
+  .store-demo {  
+    background: white;  
+    padding: 2rem;  
+    border-radius: 12px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }  
+    
+  .store-front {  
+    text-align: center;  
+    margin-bottom: 2rem;  
+  }  
+    
+  .payment-methods span {  
+    margin: 0 1rem;  
+    opacity: 0.5;  
+    transition: all 0.3s ease;  
+  }  
+    
+  .payment-methods span.active {  
+    opacity: 1;  
+    transform: scale(1.2);  
+  }  
+    
+  /* Estilos para el interruptor */  
+  .room-scene {  
+    background: #2d3748;  
+    padding: 3rem;  
+    border-radius: 12px;  
+    position: relative;  
+  }  
+    
+  .light-bulb {  
+    font-size: 3rem;  
+    text-align: center;  
+    opacity: 1;  
+    transition: all 0.3s ease;  
+  }  
+    
+  .light-on .light-bulb {  
+    opacity: 1;  
+    text-shadow: 0px 0px 65px yellow;  
+  }  
+    
+  .switch {  
+    width: 60px;  
+    height: 30px;  
+    background: #4a5568;  
+    border-radius: 15px;  
+    position: relative;  
+    cursor: pointer;  
+    margin: 2rem auto;  
+  }
+  
+  .switch-status{
+    color: #f0f0ff;
+  }
+    
+  .switch-toggle {  
+    width: 26px;  
+    height: 26px;  
+    background: white;  
+    border-radius: 50%;  
+    position: absolute;  
+    top: 2px;  
+    left: 2px;  
+    transition: all 0.3s ease;  
+  }  
+    
+  .switch.on .switch-toggle {  
+    transform: translateX(30px);  
+  }  
+    
+  /* Estilos para el club */  
+  .club-entrance {  
+    background: #2d3748;  
+    padding: 2rem;  
+    border-radius: 12px;  
+    color: white;  
+  }  
+    
+  .entrance-requirements {  
+    display: flex;  
+    gap: 2rem;  
+    margin: 2rem 0;  
+  }  
+    
+  .age-input input {  
+    width: 80px;  
+    padding: 0.5rem;  
+    border-radius: 4px;  
+    border: none;  
+  }  
+    
+  .requirements-checks {  
+    display: flex;  
+    gap: 1rem;  
+  }  
+    
+  .entrance-result {  
+    padding: 1rem;  
+    border-radius: 8px;  
+    text-align: center;  
+    margin-top: 1rem;  
+  }  
+    
+  .entrance-result.allowed {  
+    background: #48bb78;  
+  }  
+    
+  .entrance-result.denied {  
+    background: #f56565;  
+  }  
+    
+  /* Estilos comunes para el código */  
+  .code-preview {  
+    background: #1a202c;  
+    padding: 1rem;  
+    border-radius: 8px;  
+    margin-top: 1rem;  
+  }  
+    
+  .code-preview code {  
+    color: #a0aec0;  
+    font-family: 'Fira Code', monospace;  
+  }

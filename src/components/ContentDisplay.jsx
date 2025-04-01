@@ -2,8 +2,12 @@ import { useState } from 'react';
 import TrafficScene from './TrafficLight/TrafficScene';  
 import CodeExplanation from './CodeExplanation/CodeExplanation';  
 import ConditionalExplanation from './CodeExplanation/ConditionalExplanation';  
-import '../styles/ContentDisplay.css';  
-  
+import LogicalScene from './LogicalOperators/LogicalScene';  
+import LogicalExplanation from './LogicalOperators/LogicalExplanation';  
+import OperatorStructure from './LogicalOperators/OperatorStructure';  
+import '../styles/ContentDisplay.css';
+
+
 const ContentDisplay = ({ currentLanguage, selectedTopic }) => {  
   const [currentLight, setCurrentLight] = useState('green');  
   
@@ -55,6 +59,33 @@ const ContentDisplay = ({ currentLanguage, selectedTopic }) => {
           <div className="explanations-container">  
             <CodeExplanation currentLight={currentLight} />  
             <ConditionalExplanation />  
+          </div>  
+        </div>  
+      ),
+      operators: (  
+        <div className="topic-content">  
+          <h2 className="topic-title">Operadores Lógicos en JavaScript</h2>  
+            
+          <div className="concept-explanation">  
+            <p>Los operadores lógicos nos permiten combinar y evaluar múltiples condiciones.</p>  
+              
+            <p>Veamos algunos ejemplos prácticos:</p>  
+              
+            <ul>  
+              <li>El operador AND (&&) - Como una linterna que necesita batería Y estar encendida 🔦</li>  
+              <li>El operador OR (||) - Como pagar en una tienda con diferentes métodos de pago 🏪</li>  
+              <li>El operador NOT (!) - Como un interruptor que cambia entre encendido y apagado 💡</li>  
+              <li>Combinación AND y OR - Como la entrada a un club nocturno 🎵</li>  
+            </ul>  
+              
+            <p>Selecciona cada ejemplo para ver cómo funcionan los operadores lógicos en situaciones reales.</p>  
+          </div>  
+  
+            <LogicalScene />  
+  
+          <div className="explanations-container">  
+            <LogicalExplanation />  
+            <OperatorStructure />  
           </div>  
         </div>  
       ),

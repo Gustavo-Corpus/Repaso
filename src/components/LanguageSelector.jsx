@@ -5,6 +5,7 @@ const topics = {
   javascript: [
     { id: 'conditionals', name: 'Condicionales', icon: '🔄' },
     { id: 'loops', name: 'Bucles', icon: '🔁' },
+    { id: 'operators', name: 'Operadores Lógicos', icon: '🔗' },
     { id: 'functions', name: 'Funciones', icon: '📦' },
     { id: 'arrays', name: 'Arrays', icon: '📚' },
     { id: 'objects', name: 'Objetos', icon: '🎯' }

@@ -1,0 +1,114 @@
+/* src/components/LogicalOperators/NotOperator.css */
+.not-operator {
+    text-align: center;
+    padding: 2rem;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #e2e8f0;
+  }
+  
+  .light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    transition: background 0.3s ease;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .light-container.on {
+    background: radial-gradient(circle, rgba(240, 248, 255, 0.4), transparent) aliceblue;
+  }
+  
+  .light-container.off {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), transparent);
+  }
+  
+  .light-bulb {
+    font-size: 4rem;
+    color: #facc15;
+    transition: opacity 0.3s ease;
+  }
+  
+  .light-container.off .light-bulb {
+    opacity: 0.3;
+  }
+  
+  .switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1.2px;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 5px;
+    bottom: 1.2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #22c55e;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .light-status {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .code-preview {
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #a3e635;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .code-preview pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  code {
+    color: #facc15;
+  }
