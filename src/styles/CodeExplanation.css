@@ -1,11 +1,12 @@
 .code-explanation, .conditional-explanation {
-    max-width: 800px;
+    max-width: 40vw;
     margin: 2rem auto;
     padding: 2rem;
     background: #1e1e3f;
     border-radius: 12px;
     color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 50%;
   }
   
   .code-title {

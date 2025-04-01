@@ -72,10 +72,10 @@ const ContentDisplay = ({ currentLanguage, selectedTopic }) => {
             <p>Veamos algunos ejemplos prácticos:</p>  
               
             <ul>  
-              <li>El operador AND (&&) - Como una linterna que necesita batería Y estar encendida 🔦</li>  
-              <li>El operador OR (||) - Como pagar en una tienda con diferentes métodos de pago 🏪</li>  
-              <li>El operador NOT (!) - Como un interruptor que cambia entre encendido y apagado 💡</li>  
-              <li>Combinación AND y OR - Como la entrada a un club nocturno 🎵</li>  
+              <li>El operador AND (&&) - Si se usa este operador todas las condiciones deben ser verdaderas como una linterna, necesita baterias y estar en Power On para encenderse, si alguna de las 2 no se cumple entonces la linterna no encendera 🔦</li>  
+              <li>El operador OR (||) - Como su nombre lo dice puedes tener opciones y por lo menos 1 debe funcionar. Como pagar en una tienda con diferentes métodos de pago 🏪, puedes pagar en Efectivo, tarjeta o transferencia</li>  
+              <li>El operador NOT (!) - Esto devuelve lo contrario que hayas puesto. Como un interruptor que cambia entre encendido y apagado 💡</li>  
+              <li>Combinación AND y OR - Como la entrada a un club nocturno, debes cumplir ciertos requisitos para poder entrar 🎵</li>  
             </ul>  
               
             <p>Selecciona cada ejemplo para ver cómo funcionan los operadores lógicos en situaciones reales.</p>  

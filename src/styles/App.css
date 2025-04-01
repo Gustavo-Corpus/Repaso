@@ -3,12 +3,13 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 96vw;
   margin: 0 auto;
   background: white;
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  width: fit-content;
 }
 
 .topic-title {
@@ -37,7 +38,11 @@
 .explanations-container {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 15px;
+  width: min-content;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  width: 100%;
 } 
 
 .main-controls {
